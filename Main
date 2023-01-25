@@ -1,0 +1,87 @@
+-- [[ Booting The Library ]]
+local Micro = loadstring(game:HttpGet("https://raw.githubusercontent.com/smolkzzz/MicroLibrary-Source/main/MicroLibrary%20Source%20Code"))()
+
+local Window = Micro:Init {
+  Name = "Micro";
+  Toggle = "LeftAlt";
+}
+
+-- [[ Tabs % Buttons ]]
+
+local Tab = Window:Tab {
+	Name = "Tab";
+	Icon = "rbxassetid://12222879857";
+}
+
+-- Button
+local Button = Tab:Button {
+	Name = nil;
+	Callback = function()
+		-- Runs When Clicked
+	end;
+}
+
+-- Warn
+local Warning = Tab:Warn {
+  Message = "Warning Message";
+}
+
+-- Info
+local Warning = Tab:Info {
+  Message = "Warning Message";
+}
+
+-- Label
+local Warning = Tab:Label {
+  Message = "Warning Message";
+}
+
+-- Slider
+local Slider = Tab:Slider {
+  Name = [[Slide Preview]];
+				Minimum = 0;
+				Maximum = 100;
+				Default = 50;
+				Callback = function(Value)
+        
+        end;
+}
+
+-- Toggle
+local Toggle = Tab:Toggle {
+  Name = [[Toggle Preview]];
+  Callback = function(Value) 
+    if Value then
+      --Runs If State Is True
+     else
+      --Runs If State Is False
+    end
+  end;
+}
+
+-- [[ Dropdown ]]
+local Dropdown = Tab:Dropdown {
+  Name = [[Dropdown Preview]];
+	Items = {};
+	Callback = function(Option)
+    -- Runs With The Selected Option
+  end;
+}
+
+-- Adding Item
+Dropdown:Add("Name","Value")
+-- Removing Item
+Dropdown:Remove("Name")
+-- Clear Items
+Dropdown:Clear()
+
+-- Adaptive Input (Textbox)
+local Textbox = Tab:TextBox {
+  Name = [[Textbox Preview]];
+	RemoveTextOnFocusLost = false;
+	PlaceHolderText = "PlaceHolderText";
+	RemoveTextOnFocus = false;
+	Callback = function(txt)
+    -- Runs When The Run Button Is Clicked
+  end;
+}
