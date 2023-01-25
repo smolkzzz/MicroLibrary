@@ -38,11 +38,11 @@ local Warning = Tab:Label {
 
 -- Slider
 local Slider = Tab:Slider {
-  Name = [[Slide Preview]];
-				Minimum = 0;
-				Maximum = 100;
-				Default = 50;
-				Callback = function(Value)
+	Name = [[Slide Preview]];
+	Minimum = 0;
+	Maximum = 100;
+	Default = 50;
+	Callback = function(Value)
         
         end;
 }
