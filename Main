@@ -1,7 +1,7 @@
 -- [[ Booting The Library ]]
-local Micro = loadstring(game:HttpGet("https://raw.githubusercontent.com/smolkzzz/MicroLibrary-Source/main/MicroLibrary%20Source%20Code"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/smolkzzz/MicroLibrary-Source/main/MicroLibrary%20Source%20Code"))()
 
-local Window = Micro:Init {
+local Window = _G.Library:Init {
   Name = "Micro";
   Toggle = "LeftAlt";
 }
