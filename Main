@@ -27,13 +27,13 @@ local Warning = Tab:Warn {
 }
 
 -- Info
-local Warning = Tab:Info {
-  Message = "Warning Message";
+local Info = Tab:Info {
+  Message = "Info Message";
 }
 
 -- Label
-local Warning = Tab:Label {
-  Message = "Warning Message";
+local Label = Tab:Label {
+  Message = "Label Message";
 }
 
 -- Slider
@@ -84,12 +84,4 @@ local Textbox = Tab:TextBox {
 	Callback = function(txt)
     -- Runs When The Run Button Is Clicked
   end;
-}
-
--- Keybind = Tab:Keybind {
-	Name = [[Keybind Preview]];
-	DefaultBind = "F";
-	Callback = function() 
-		-- Runs When Keybind Fired
-	end
 }
