@@ -43,7 +43,7 @@ local Slider = Tab:Slider {
 	Maximum = 100;
 	Default = 50;
 	Callback = function(Value)
-        
+        	--Runs When Slider Value Is Changed
         end;
 }
 
@@ -84,4 +84,12 @@ local Textbox = Tab:TextBox {
 	Callback = function(txt)
     -- Runs When The Run Button Is Clicked
   end;
+}
+
+-- Keybind = Tab:Keybind {
+	Name = [[Keybind Preview]];
+	DefaultBind = "F";
+	Callback = function() 
+		-- Runs When Keybind Fired
+	end
 }
