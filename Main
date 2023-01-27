@@ -14,9 +14,6 @@ local Window = _G.Library:Init {
 local Tab = Window:Tab {
 	Name = "Tab";
 	Icon = "rbxassetid://12222879857";
-	KeySystem = false;
-	CorrectKey = "Hello World!";
-	GetkeyLink = "https://link";
 }
 
 -- Button
