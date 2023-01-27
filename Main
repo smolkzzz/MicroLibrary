@@ -4,7 +4,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/smolkzzz/MicroLibrary
 local Window = _G.Library:Init {
   Name = "Micro";
   Toggle = "LeftAlt";
-  
+  KeySystem = false;
+  CorrectKey = "Hello World!";
+  GetkeyLink = "https://link";
 }
 
 -- [[ Tabs % Buttons ]]
