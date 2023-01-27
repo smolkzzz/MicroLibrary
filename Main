@@ -4,6 +4,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/smolkzzz/MicroLibrary
 local Window = _G.Library:Init {
   Name = "Micro";
   Toggle = "LeftAlt";
+  
 }
 
 -- [[ Tabs % Buttons ]]
@@ -11,6 +12,9 @@ local Window = _G.Library:Init {
 local Tab = Window:Tab {
 	Name = "Tab";
 	Icon = "rbxassetid://12222879857";
+	KeySystem = false;
+	CorrectKey = "Hello World!";
+	GetkeyLink = "https://link";
 }
 
 -- Button
